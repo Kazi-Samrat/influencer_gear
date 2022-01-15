@@ -19,7 +19,6 @@ body{
     display: grid;
     justify-content: space-around;
     align-items: center;
-    grid-template-columns: repeat(2 1fr);
 }
 
 .header-container{
@@ -48,7 +47,7 @@ nav a{
     text-decoration: none;
     color: var(--text-color);
     font-weight: 500;
-    font-size: 18;
+    font-size: 18px;
 }
 nav a:hover{
     color: var(--btn-hover-color);
@@ -331,7 +330,6 @@ nav a:hover{
   @media only screen and (max-width: 768px) {
     .header-container{
         display: block;
-        max-width: auto;
         text-align: center;
     }
     .logo a{
@@ -468,7 +466,6 @@ nav a:hover{
     }
 
     .product-button{
-        padding-right: 10px;
         float: none;
         margin: auto;
     }
@@ -482,6 +479,16 @@ nav a:hover{
     #products-area{
         margin-bottom: 40px;
     }
+
+  }
+
+  @media only screen and (max-width: 500px) {
+    .product-button{
+        padding-right: 10px;
+        float: right;
+        margin: 0;
+    }
+
 
   }
   @media only screen and (max-width: 600px) {
