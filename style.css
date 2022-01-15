@@ -59,7 +59,6 @@ nav a:hover{
 
 /* hero section */
 .hero-container{
-
     display: flex;
     max-width: 1200px;
     justify-content: center;
@@ -125,7 +124,7 @@ nav a:hover{
     color: var(--header-color);
     font-size: 28px;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 51px;
 }
 .products-container{
     display: flex;
@@ -223,6 +222,7 @@ nav a:hover{
     margin-left: 20px;
     padding: 20px;
     margin-bottom: 30px;
+    border-radius: 5px;
 }
 
 .contact-info a{
@@ -245,7 +245,7 @@ nav a:hover{
 #footer-area{
     background: #0A0826;
     text-align: center;
-    padding: 100px;
+    padding: 100px 0px 100px 0px;
 }
 
 .footer-content h2{
@@ -319,6 +319,243 @@ nav a:hover{
 
 
 /* responsive */
-@media screen {
+
+
+/* header area responsive */
+@media only screen and (max-width: 1224px) {
+    .header-container{
+        padding: 30px 50px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .header-container{
+        display: block;
+        max-width: auto;
+        text-align: center;
+    }
+    .logo a{
+        font-size: 18px;
+    }
+
     
-}
+  }
+  @media only screen and (max-width: 575px) {
+    nav{
+        display: none;
+    }
+
+    .logo a{
+        font-size: 16px;
+    }
+  }
+
+
+
+
+  /* hero section responsive */
+
+@media only screen and (max-width: 1224px) {
+    .hero-container{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-content{
+        text-align: center;
+    }
+    .hero-content h1{
+        font-size: 40px;
+    }
+    .hero-content p{
+        font-size: 16px;
+        color: var(--text-color);
+        margin-bottom: 40px;
+        width: auto;
+        padding: 0px 100px;
+    }
+    .hero-image img{
+        width: 300px;
+        height: 300px;
+    }
+    .hero-image{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-top: 50px;
+    }
+    
+    #hero-section{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .hero-image:hover{
+        transform: none;
+    }
+
+    
+  }
+
+@media only screen and (max-width: 650px) {
+    .hero-content{
+        text-align: center;
+    }
+    .hero-content h1{
+        font-size: 36px;
+    }
+
+    
+  }
+@media only screen and (max-width: 575px) {
+    .hero-content{
+        text-align: center;
+    }
+    .hero-content h1{
+        font-size: 32px;
+    }
+
+    .hero-content p{
+        padding: 0px 20px;
+    }
+    
+  }
+@media only screen and (max-width: 402px) {
+    .hero-content{
+        text-align: center;
+    }
+    .hero-content h1{
+        font-size: 30px;
+    }
+
+    .hero-content p{
+        padding: 0px 0px;
+    }
+    
+  }
+@media only screen and (max-width: 340px) {
+    .hero-content h1{
+        font-size: 28px;
+    }
+    .hero-image img{
+        width: 200px;
+        height: 200px;
+    }
+
+  }
+
+
+
+  /* product area */
+  @media only screen and (max-width: 1224px) {
+    .products-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 0px 20px;
+    }
+
+    .product .product-title{
+        font-size: 20px;
+    }
+    .product .product-p{
+        font-size: 15px;
+    }
+    .product .product-price{
+        font-size: 18px;
+    }
+
+    .product-button{
+        padding-right: 10px;
+        float: none;
+        margin: auto;
+    }
+
+  }
+  @media only screen and (max-width: 780px) {
+    #products-area h2{
+        margin-bottom: 20px;
+    }
+
+    #products-area{
+        margin-bottom: 40px;
+    }
+
+  }
+  @media only screen and (max-width: 600px) {
+    .products-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 0px 20px;
+    }
+
+  }
+
+  @media only screen and (max-width: 450px) {
+    #products-area{
+        margin-top: 50px;
+    }
+
+  }
+
+
+
+/* contact area */
+@media only screen and (max-width: 1224px) {
+    .contact-container{
+        display: flex;
+        max-width: 800px;
+    }
+    .contact-info a{
+        margin-left: 0px;
+    }
+    .contact-info{
+        padding: 20px;
+    }
+    .contact-info input{
+        margin-left: 0px;
+        padding: 25px;
+        margin-bottom: 15px;
+        display: block;
+    }
+  }
+@media only screen and (max-width: 880px) {
+    .contact-container{
+        display: block;
+        max-width: 800px;
+    }
+    .contact-info{
+        padding: 20px;
+    }
+    .contact-info input{
+        display: block;
+        width: 87%;
+        margin-bottom: 20px;
+    }
+
+  }
+@media only screen and (max-width: 582px) {
+    #contact-area{
+        display: none;
+    }
+    
+  }
+
+
+
+
+  /* footer responsive */
+  @media only screen and (max-width: 455px) {
+    .footer-content p{
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
+    .footer-content h2{
+        font-size: 16px;
+    }
+    
+  }
